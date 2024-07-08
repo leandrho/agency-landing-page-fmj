@@ -169,10 +169,13 @@ header{
         
     }
     .nav-link{
-        color: var(--Very-dark-grayish-blue);
+        color: var(--Dark-grayish-blue);
+        font-size: 18px;
     }
     .nav-btn{
         background-color: var(--Yellow);
+        font-size: 16px;
+        
     }
     .nav-sidemenu-btn{
         display: block;
