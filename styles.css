@@ -13,9 +13,9 @@
     --Dark-grayish-blue: hsl(232, 10%, 55%);
     --Grayish-blue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
-    --header-background: #3dbdff;
+    --header-background: #3ebeff;
 }
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,6 +32,10 @@ li, a{
     font-weight: 600;
     font-size: 16px;
 }
+h1,h2,h3{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+}
 button{
     border: none;
     background-color: transparent;
@@ -39,9 +43,9 @@ button{
     font-family: "Fraunces", sans-serif;
     font-weight: 700;
 }
-
-.hidden{
-    display: none;
+img{
+    width: 100%;
+    display: block;
 }
 .container{
     height: 100vh;
@@ -51,8 +55,11 @@ button{
     background-color: var(--White);
 
     position: relative;
-    background-color: var(--Very-dark-desaturated-blue);
+    background-color: var(--header-background);
 }
+/* 
+        HEADER 
+*/
 header{
     background-color: var(--header-background);
     padding: 2.2rem;
@@ -95,8 +102,38 @@ header{
     height: 30px;
     display: none;
 }
-
-
+/* 
+    HERO 
+*/
+.hero{
+    height: 682px;
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom; /* Que onda con esta?*/
+}
+.hero-absolute-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem;
+}
+.hero-title{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--White);
+}
+.hero-arrow{
+    max-width: min-content;
+}
 
 
 
@@ -118,6 +155,7 @@ header{
         padding-block: 2.5rem;
         opacity: 0;
         transition: opacity ease 0.5s;
+        z-index: 100;
     }
     .navbar-nav::before{
         content: '';
@@ -127,6 +165,7 @@ header{
         border: 19px solid transparent;
         border-left-color: var(--White);
         transform: rotate(45deg);
+        z-index: 100;
         
     }
     .nav-link{
@@ -141,8 +180,21 @@ header{
     /* 
         HERO 
     */
+    .hero{
+        height: 480px;
+    }
+    .hero-title{
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        color: var(--White);
+        text-align: center;
+    }
 }
 
 .show{
     opacity: 1;
+}
+.hidden{
+    display: none;
 }
