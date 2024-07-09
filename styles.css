@@ -50,7 +50,7 @@ img{
     display: block;
 }
 .container{
-    min-height: 100vh;
+    height: 100vh;
     max-width: 1440px;
     
     margin: 0 auto;
@@ -307,7 +307,7 @@ header{
     .navbar-nav{
         position: absolute;
         flex-direction: column;
-        top: 10%;
+        top: 100px;
         right: 1.8rem;
         left: 1.8rem;
         background-color: var(--White);
