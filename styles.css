@@ -285,7 +285,6 @@ header{
 */
 .gallery{
     width: 100%;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -384,7 +383,6 @@ footer{
         border-left-color: var(--White);
         transform: rotate(45deg);
         z-index: 100;
-        
     }
     .nav-link{
         color: var(--Dark-grayish-blue);
@@ -393,7 +391,6 @@ footer{
     .nav-btn{
         background-color: var(--Yellow);
         font-size: 16px;
-        
     }
     .nav-sidemenu-btn{
         display: block;
